@@ -6,7 +6,8 @@ const textList = fs.readFileSync(`${__dirname}/text.txt`, 'utf-8').split('\n')
 
 const contentTypeDict = {
     '.js': 'application/javascript',
-    '.html': 'text/html'
+    '.html': 'text/html',
+    '.ico': 'image/x-icon'
 }
 
 const getContentType = filepath => contentTypeDict[path.extname(filepath)]
